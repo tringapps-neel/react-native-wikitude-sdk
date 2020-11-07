@@ -163,9 +163,9 @@
                       NSURL *file = [NSURL URLWithString:[NSString stringWithFormat:@"../%@", self.tmp_url] relativeToURL:bundle];
                       NSURL *absoluteFile = [file absoluteURL];
                       NSLog(@"Es Local url: %@",self.tmp_url);
-                     if([self.architectView isRunning]){
+                    // if([self.architectView isRunning]){
                         self.wtNavigation =  [self.architectView loadArchitectWorldFromURL: [[NSBundle mainBundle] URLForResource:self.tmp_url withExtension:@"html"] ];
-                    }
+                    //}
                   }
             [self startWikitudeSDKRendering];
             //[self stopWikitudeSDKRendering];
